@@ -25,3 +25,12 @@ print(round(3.75, 1))
 # Less or equal: 3 <= 2 False
 
 print(num_1 <= num_2) # False
+
+# otter Case
+
+x = '100'
+y = '200'
+x = int(x)
+y = int(y)
+
+print(x + y)
