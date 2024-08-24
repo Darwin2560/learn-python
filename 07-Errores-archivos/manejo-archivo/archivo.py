@@ -46,8 +46,8 @@ def eliminar_datos():
     archivo = open('texto.txt', 'w')
     archivo.close()
 
-#escribir_archivo()
+escribir_archivo()
 #leer_archivo()
 #agregar_datos()
 #modificar_datos()
-eliminar_datos()
+#eliminar_datos()
