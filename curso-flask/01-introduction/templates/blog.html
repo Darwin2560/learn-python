@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+</head>
+<body>
+    <h1>Mis Blogs</h1>
+
+    <a href="{{ url_for('home') }}">Página de Inicio</a>
+
+    {% for blog in blogs %}
+        <h3>{{ blog.title}}</h3>
+        <p>{{ blog.description }}</p>
+    {% endfor %}
+</body>
+</html>
