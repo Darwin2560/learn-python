@@ -1,6 +1,6 @@
-from flask import Flask
-from app.views import base
 from app.projects.views import project
+from app.views import base
+from flask import Flask
 
 app = Flask(__name__)
 app.register_blueprint(base)

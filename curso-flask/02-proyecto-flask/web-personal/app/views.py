@@ -1,16 +1,20 @@
-from flask import render_template, Blueprint
+from flask import Blueprint, render_template
+
 # from app import app
 
-base = Blueprint('base', __name__)
+base = Blueprint("base", __name__)
 
-@base.route('/home')
+
+@base.route("/home")
 def home():
-    return render_template('home.html')
+    return render_template("home.html")
 
-@base.route('/portfolio')
+
+@base.route("/portfolio")
 def portfolio():
-    return render_template('portfolio.html')
+    return render_template("portfolio.html")
 
-@base.route('/contact')
+
+@base.route("/contact")
 def contact():
-    return render_template('contact.html')
+    return render_template("contact.html")

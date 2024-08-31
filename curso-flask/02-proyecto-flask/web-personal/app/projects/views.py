@@ -1,8 +1,9 @@
-from flask import render_template, Blueprint
 from app.projects.models import PROJECTS
+from flask import Blueprint, render_template
 
-project = Blueprint('project', __name__)
+project = Blueprint("project", __name__)
 
-@project.route('/index')
+
+@project.route("/index")
 def index():
-    return render_template('project_templates/index.html', projects=PROJECTS)
+    return render_template("project_templates/index.html", projects=PROJECTS)

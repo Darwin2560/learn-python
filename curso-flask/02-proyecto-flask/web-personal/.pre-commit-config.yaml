@@ -16,10 +16,11 @@ repos:
     rev: 23.3.0
     hooks:
       - id: black
-        exclude: acc_app_venv/
+        exclude: /env/
   # flake8 checks your code against PEP8, Python's official style guide,
   # and also looks for logical errors.
   - repo: https://github.com/pycqa/flake8
     rev: 6.0.0
     hooks:
       - id: flake8
+        exclude: /env/
