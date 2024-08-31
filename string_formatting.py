@@ -1,17 +1,19 @@
-person = {'name': 'John Doe', 'age': 30, 'city': 'New York'}
+person = {"name": "John Doe", "age": 30, "city": "New York"}
 
 sentence = f"My name is {person['name']}, I am {person['age']}"
 print(sentence)
 
 print("================================================================")
 
-class Person():
 
+class Person:
     def __init__(self, name, age, city):
         self.name = name
         self.age = age
         self.city = city
-pi = Person('John Doe', 30, 'New York')
+
+
+pi = Person("John Doe", 30, "New York")
 
 sentence = f"My name is {pi.name}, I am {pi.age}"
 print(sentence)
@@ -37,6 +39,7 @@ print(sentence)
 print("================================================================")
 
 import datetime
+
 my_date = datetime.datetime(2024, 8, 9, 11, 56, 45)
 print(my_date)
 

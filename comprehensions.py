@@ -36,7 +36,7 @@ print(my_list) """
 
 # Using a filter + lambda function
 """ my_list = filter(lambda n: n % 2 == 0, nums)
-print(list(my_list)) """ # Convert the filter object to a list for printing
+print(list(my_list)) """  # Convert the filter object to a list for printing
 
 # I want a (latter, num) pair for each latter in 'abcd' and each number in '0123'
 """ my_list = []
@@ -46,11 +46,11 @@ for latter in 'abcd':
 print(my_list) """
 
 """ my_list = [(latter, number) for latter in 'abcd' for number in range(4)]
-print(my_list) """ # Print the list directly, no need to convert to a list
+print(my_list) """  # Print the list directly, no need to convert to a list
 
 # Disctionary Comprehension
-names = ['Bruce', 'Clark', 'Peter', 'Logan', 'Wade']
-heros = ['Batman', 'Superman', 'Spiderman', 'Wolverine', 'Deadpool']
+names = ["Bruce", "Clark", "Peter", "Logan", "Wade"]
+heros = ["Batman", "Superman", "Spiderman", "Wolverine", "Deadpool"]
 # print(zip(name, heros)) # This will print a list of tuples
 
 # I want a dict{'name': 'hero'} for each name, hero in zip(names, heros)
@@ -60,7 +60,7 @@ for name, hero in zip(names, heros):
 print(my_dict) """
 
 """ my_dict = {name: hero for name, hero in zip(names, heros) if name != 'Peter'}
-print(my_dict) """ # Print the dictionary directly, no need to convert to a list or a dict comprehension
+print(my_dict) """  # Print the dictionary directly, no need to convert to a list or a dict comprehension
 
 # set Comprehension
 # nums = [1, 1, 2, 1, 3, 4, 3, 4, 5, 5, 6, 7, 8, 7, 9, 9]
@@ -83,7 +83,7 @@ nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 my_gen = gen_func(nums) """
 
-my_gen = (n*n for n in nums)
+my_gen = (n * n for n in nums)
 
 for i in my_gen:
     print(i)

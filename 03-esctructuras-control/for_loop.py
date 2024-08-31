@@ -1,5 +1,4 @@
-
-datos = ['Alex', 'Roel', 25, 1.67, True]
+datos = ["Alex", "Roel", 25, 1.67, True]
 
 """
 for dato in datos:

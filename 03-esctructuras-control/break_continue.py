@@ -1,4 +1,3 @@
-
 c = 0
 
 while c < 10:
@@ -6,15 +5,11 @@ while c < 10:
     print(c)
 
     if c == 5:
-        #print("Termina el bucle")
-        print('Salta a siguiente  iteración')
-        #break
+        # print("Termina el bucle")
+        print("Salta a siguiente  iteración")
+        # break
         continue
-    
+
     print("Despues de continue")
 else:
-    print('Fin de While')
-
-
-
-
+    print("Fin de While")

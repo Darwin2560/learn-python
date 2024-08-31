@@ -9,10 +9,10 @@ Análisis: para la solución de este problema,
  y residuo.
 """
 
-print('Calcular cociente y residuo')
+print("Calcular cociente y residuo")
 
-a = input('Ingrese primer número: ')
-b = input('Ingrese segundo número:')
+a = input("Ingrese primer número: ")
+b = input("Ingrese segundo número:")
 
 a = int(a)
 b = int(b)
@@ -20,5 +20,5 @@ b = int(b)
 cociente = a // b
 residuo = a % b
 
-print('El cociente es: ', cociente)
-print('El Residuo es: ', residuo)
+print("El cociente es: ", cociente)
+print("El Residuo es: ", residuo)

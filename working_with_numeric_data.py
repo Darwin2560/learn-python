@@ -12,7 +12,7 @@ num += 1
 num_1 = 3
 num_2 = 2
 
-print(dir(num)) # No muestra todos los atributos
+print(dir(num))  # No muestra todos los atributos
 print(abs(-2))
 print(round(3.75, 1))
 
@@ -24,12 +24,12 @@ print(round(3.75, 1))
 # Greater or equal: 3 >= 2 True
 # Less or equal: 3 <= 2 False
 
-print(num_1 <= num_2) # False
+print(num_1 <= num_2)  # False
 
 # otter Case
 
-x = '100'
-y = '200'
+x = "100"
+y = "200"
 x = int(x)
 y = int(y)
 

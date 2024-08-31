@@ -1,24 +1,28 @@
-'''
+"""
 LEGB
 Local, Enclosing, Global, Built-in
-'''
+"""
 
-x = 'global x'
+x = "global x"
+
 
 def test():
-    y = 'local y'
+    y = "local y"
     # print(y)
     print(x)
 
+
 test()
-#print(y) # NameError: name 'y' is not defined
+# print(y) # NameError: name 'y' is not defined
+
 
 def outer():
-    x = 'outer x'
+    x = "outer x"
 
     def inner():
-        x = 'inner x'
+        x = "inner x"
         print(x)
+
     inner()
     print(x)
 

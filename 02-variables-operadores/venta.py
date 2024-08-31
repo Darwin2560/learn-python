@@ -16,22 +16,21 @@ igv = vv * 0.18
 
 pv = vv + igv
 """
-#Mensaje de la Aplicación
+# Mensaje de la Aplicación
 print("---- REALIZAR UNA VENTA --- ")
 
-#Entrada de datos 
-vv = float(input('Ingrese valor de venta: '))
+# Entrada de datos
+vv = float(input("Ingrese valor de venta: "))
 
-#Operaciones 
+# Operaciones
 igv = vv * 0.18
 pv = vv + igv
 
-#Salida de datos 
-print('='*25)
-print('---- FACTURA DE VENTA ---')
-print('='*25)
-print('Valor de Venta: ', vv)
-print('IGV: ', igv)
-print('Precio de Venta: ', pv)
-print('='*25)
-
+# Salida de datos
+print("=" * 25)
+print("---- FACTURA DE VENTA ---")
+print("=" * 25)
+print("Valor de Venta: ", vv)
+print("IGV: ", igv)
+print("Precio de Venta: ", pv)
+print("=" * 25)

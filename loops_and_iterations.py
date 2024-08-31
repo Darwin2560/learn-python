@@ -1,10 +1,9 @@
-
 list_number = [1, 2, 3, 4, 5]
 
 for number in list_number:
-    for latter in 'abc':
+    for latter in "abc":
         if number == 3:
-            print(f'Found {number}! {latter}')
+            print(f"Found {number}! {latter}")
             # break
             continue
         print(number, latter)

@@ -1,7 +1,8 @@
 def main():
-    spacecraft = {'name': 'Voyager 1'}
-    spacecraft.update({'distace': 42.123, 'orbit': 'Sun'})
+    spacecraft = {"name": "Voyager 1"}
+    spacecraft.update({"distace": 42.123, "orbit": "Sun"})
     print(create_report(spacecraft))
+
 
 def create_report(spacecraft):
     return f"""
@@ -13,5 +14,6 @@ def create_report(spacecraft):
 
     ======= END REPORT =======
     """
+
 
 main()

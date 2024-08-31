@@ -1,11 +1,11 @@
 def es_primo(numero):
     contador = 0
 
-    for i in range(1, numero+1):
+    for i in range(1, numero + 1):
         if i == 1 or i == numero:
             continue
 
-        #Ferifica que la división con los números hasta el 
+        # Ferifica que la división con los números hasta el
         # el número ingresado sea igual a 0
         if numero % i == 0:
             contador += 1
@@ -15,13 +15,15 @@ def es_primo(numero):
     else:
         return False
 
+
 def main():
-    numero = int(input('Ingrese un número: '))
+    numero = int(input("Ingrese un número: "))
 
     if es_primo(numero):
-        print('Es Primo')
+        print("Es Primo")
     else:
-        print('No es Primo')
+        print("No es Primo")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

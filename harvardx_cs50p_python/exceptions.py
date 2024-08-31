@@ -1,6 +1,6 @@
 def main():
     x = get_int()
-    print(f'x is {x}')
+    print(f"x is {x}")
 
 
 def get_int():
@@ -11,5 +11,6 @@ def get_int():
             print("Invalid input. Please enter a number.")
         else:
             return x
-        
+
+
 main()
