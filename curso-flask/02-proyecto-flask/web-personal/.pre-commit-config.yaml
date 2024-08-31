@@ -1,0 +1,25 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-ast
+  # Isort automatically sorts and formats your Python imports.
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        args: ["--filter-files",
+          # line length must match black and flake8
+          "--profile=black"]
+  # Black automatically formats your code to make it more readable and consistent.
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+        exclude: acc_app_venv/
+  # flake8 checks your code against PEP8, Python's official style guide,
+  # and also looks for logical errors.
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
