@@ -3,6 +3,7 @@
 {% block title %}Projects{% endblock %}
 
 {% block content %}
+    <a href="{{ url_for('project.create') }}">Insertar un nuevo proyecto</a>
     <table>
         <tr>
             <th>Titulo</th>
@@ -14,6 +15,8 @@
             <td>{{ project.title }}</td>
             <td>{{ project.description }}</td>
             <td><a href="{{ project.github_url }}" target="_blank">GitHub</a></td>
+            <td><a href="{{ url_for('project.edit', id=project['id']) }}">Editar</a></td>
+            <td><a href="{{ url_for('project.delete', id=project['id']) }}">Eliminar</a></td>
         </tr>
         {% endfor %}
     </table>
